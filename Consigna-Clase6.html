@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario de inicio</title>
+</head>
+<body>
+	<form name="Formulario" action="Consigna-Clase6.php" method="post">
+		<table> <!-- Table con 5 filas y 2 columnas  -->
+			<tr>
+				<td><label for="nombre_id">Nombre: </label></td>
+				<td><input type="text" name="nombre" placeholder="Ingrese el nombre"></td>
+			</tr>
+			<tr>
+				<td><label for="apellido_id">Apellido: </label></td>
+				<td><input type="text" name="apellido" placeholder="Ingrese el apellido"></td>
+			</tr>
+			<tr>
+				<td><label for="edad_id">Edad: </label></td>
+				<td><input type="number" name="edad" min="10" max="100"></td>
+			</tr>
+			<tr>
+				<td><label for="comision_id">Comisión: </label></td>
+				<td>
+				  <select name="comision" >
+				    <option value="1">Comisión 1</option>
+				    <option value="2" selected>Comisión 2</option>
+				    <option value="3">Comisión 3</option>
+				    <option value="4">Comisión 4</option>
+				    <option value="5">Comisión 5</option>
+				    <option value="6">Comisión 6</option>
+				    <option value="7">Comisión 7</option>
+				    <option value="8">Comisión 8</option>
+				    <option value="9">Comisión 9</option>
+				  </select>
+				  <!--<input type="number" name="comision" min="1" max="9">-->
+				</td>
+			</tr>
+			<tr>
+				<td><label for="password_id">Password: </label></td>
+				<td><input type="password" name="password" placeholder="Ingrese la contraseña"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="Login"></td></tr>
+		</table>
+	</form>
+
+</body>
+</html>
